@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+:root {
+    --font: "Notable";
+    ---font:"Monoton";
+    --fonte: "Urbanist";
+    ---fonte: "Ultra";
+}
+body {
+    background-color: #F5F5F5;
+}
+header {
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 1rem;
+}
+.sparkles {
+    position: absolute;
+}
+.sparkles img {
+    position: relative;
+    width: 4rem;
+    bottom: 5rem;
+    right: 1rem;
+}
+.menu {
+    display: flex;
+    gap: 10rem;
+}
+.menuI {
+    position: relative;
+    left: 2rem;
+    font-size: 5.5rem;
+    font-family: var(--font);
+    color: #1b1b1b;
+}
+.menuII, .menuIII {
+    position: relative;
+    top: 1.5rem;
+    left: 60rem;
+    font-size: 4.5rem;
+    font-family: var(--fonte);
+    color: #1b1b1b;
+}
+.menuIV {
+    position: relative;
+    top: 0.5rem;
+    left: 60rem;
+    font-size: 4.5rem;
+    font-family: var(--fonte);
+    background-color: #FCC419;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+.main h1 {
+    position: relative;
+    top: 20rem;
+    margin-right: 65rem;
+    left: 20%;
+    font-size: 15rem;
+    font-family: var(--font);
+    z-index: 0;
+    color: #F5F5F5;
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: #1b1b1b; /* cor da borda */
+}
+.mainI img {
+    position: absolute;
+    top: 15rem;
+    margin-left: 15rem;
+    width: 60rem;
+    border-radius: 10px;
+}
+.mainII h2 {
+    position: relative;
+    bottom: 55rem;
+    margin-right: 65rem;
+    left: 20%;
+    font-size: 15rem;
+    font-family: var(--font);
+    color: #1b1b1b;
+    z-index: 0;
+}
+.redes {
+    position: absolute;
+    left: 120rem;
+    bottom: 36rem;
+    width: auto;
+    padding: 3rem 5rem;
+    background-color: #F5F5F5;
+}
+.redes h3 {
+    font-size: 4rem;
+    font-family: var(--fonte);
+    color: #1b1b1b;
+}
+article {
+    border-top: 13rem solid #FCC419;
+    background-color: #555555;
+}
+.sobremim {
+    position: relative;
+    color: #F5F5F5;
+}
+.sobremim h1 {
+    position: relative;
+    left: 10rem;
+    padding: 7rem 0;
+    font-size: 7rem;
+    font-family: var(--font);
+    margin-right: 80rem;
+    Letter-spacing: 0.5rem;
+}
+.sobremim h2 {
+    position: relative;
+    left: 10rem;
+    font-size: 3rem;
+    font-family: var(--fonte);
+    margin-right: 85rem;
+    font-weight: 400;
+}
+article .img {
+    position: relative;
+}
+article .img img {
+    position: relative;
+    left: 120rem;
+    bottom: 35rem;
+    width: 45rem;
+    border-radius: 10px;
+}
