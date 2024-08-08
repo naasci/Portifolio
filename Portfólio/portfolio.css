@@ -37,23 +37,41 @@ header {
     font-family: var(--font);
     color: #1b1b1b;
 }
-.menuII, .menuIII {
+.menuII a{
     position: relative;
     top: 1.5rem;
     left: 60rem;
     font-size: 4.5rem;
     font-family: var(--fonte);
     color: #1b1b1b;
+    text-decoration: none;
 }
-.menuIV {
+.menuIII a {
+    position: relative;
+    top: 1.5rem;
+    left: 60rem;
+    font-size: 4.5rem;
+    font-family: var(--fonte);
+    color: #1b1b1b;
+    text-decoration: none;
+}
+.menuIV a p{
+    background-color: #FCC419;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+.menuIV a {
     position: relative;
     top: 0.5rem;
     left: 60rem;
     font-size: 4.5rem;
     font-family: var(--fonte);
-    background-color: #FCC419;
-    padding: 1rem 2rem;
-    border-radius: 30px;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+main {
+    position: relative;
+    top: 7rem;
 }
 .main h1 {
     position: relative;
@@ -87,7 +105,7 @@ header {
 .redes {
     position: absolute;
     left: 120rem;
-    bottom: 36rem;
+    bottom: 28rem;
     width: auto;
     padding: 3rem 5rem;
     background-color: #F5F5F5;
@@ -131,4 +149,47 @@ article .img img {
     bottom: 35rem;
     width: 45rem;
     border-radius: 10px;
+}
+.infos {
+    position: relative;
+    bottom: 90rem;
+    margin-left: 100rem;
+}
+.infos h3 {
+    font-family: var(--fonte);
+    font-size: 2.5rem;
+    background-color: #FCC419;
+    padding: 2rem 1rem;
+    margin: 0.5rem 2rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 30px;
+}
+.contato {
+    position: relative;
+    display: flex;
+    gap: 5rem;
+    bottom: 69rem;
+    margin-left: 9rem;
+    margin-right: 80rem;
+    padding: 2rem 2rem;
+    background-color: #FCC419;
+    border-radius: 30px;
+}
+.contato h3 {
+    font-family: var(--fonte);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.contato h3 img {
+    position: relative;
+    top: 1rem;  
+}
+.mainIII {
+    position: relative;
+    margin-left: 100rem;
+}
+.mainIII h2 {
+    font-size: 5rem;
+    font-family: var(--font);
 }
