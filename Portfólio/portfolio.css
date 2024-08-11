@@ -2,76 +2,88 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
 :root {
     --font: "Notable";
-    ---font:"Monoton";
     --fonte: "Urbanist";
-    ---fonte: "Ultra";
 }
+
 body {
     background-color: #F5F5F5;
+    font-family: var(--fonte);
 }
+
 header {
     position: absolute;
     padding: 1rem 2rem;
     top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
 }
-.sparkles {
-    position: absolute;
-}
-.sparkles img {
-    position: relative;
-    width: 4rem;
-    bottom: 5rem;
-    right: 1rem;
-}
+
 .menu {
     display: flex;
     gap: 10rem;
 }
 .menuI {
     position: relative;
-    left: 2rem;
+    left: 3rem;
+}
+.menuI {
     font-size: 5.5rem;
     font-family: var(--font);
     color: #1b1b1b;
 }
-.menuII a{
+.menuII, .menuIII {
+    top: 1rem;
+    transition: 0.1s ease-in-out;
+    margin: 0.4rem 0.3rem;
+}
+.menuII:hover {
+    color: #FCC419;
+    border-bottom: 0.5rem solid #FCC419;
+}
+.menuIII:hover {
+    color: #FCC419;
+    border-bottom: 0.5rem solid #FCC419;
+}
+.menuII, .menuIII, .menuIV {
     position: relative;
-    top: 1.5rem;
-    left: 60rem;
+    left: 65rem;
+}
+.menuII a, .menuIII a, .menuIV a {
     font-size: 4.5rem;
     font-family: var(--fonte);
     color: #1b1b1b;
     text-decoration: none;
 }
-.menuIII a {
-    position: relative;
-    top: 1.5rem;
-    left: 60rem;
-    font-size: 4.5rem;
-    font-family: var(--fonte);
-    color: #1b1b1b;
-    text-decoration: none;
-}
-.menuIV a p{
+.menuIV a p {
     background-color: #FCC419;
     padding: 1rem 2rem;
     border-radius: 30px;
+    transition: ease-in-out 0.1s;
 }
-.menuIV a {
+.menuIV a p:hover {
+    background-color: #1b1b1b;
+    color: #FCC419;
+}
+.sparkles img {
+    width: 4rem;
     position: relative;
-    top: 0.5rem;
-    left: 60rem;
-    font-size: 4.5rem;
-    font-family: var(--fonte);
-    color: #1b1b1b;
-    text-decoration: none;
+    right: 185rem;
 }
+
+/* Estilos principais */
 main {
     position: relative;
-    top: 7rem;
+    top: 6rem;
+    left: 10rem;
+    margin-right: 10rem;
 }
 .main h1 {
     position: relative;
@@ -110,51 +122,64 @@ main {
     padding: 3rem 5rem;
     background-color: #F5F5F5;
 }
-.redes h3 {
+.redes a {
+    text-decoration: none;
+}
+.redes a h3 {
     font-size: 4rem;
     font-family: var(--fonte);
     color: #1b1b1b;
+    transition: 0.1s cubic-bezier(0.1,0.45,0.8,1);
+}
+.redes a h3:hover {
+    color: #FCC419;
 }
 article {
     border-top: 13rem solid #FCC419;
-    background-color: #555555;
+    background-color: #E8E8E8;
+    padding: 2rem;
 }
+
 .sobremim {
-    position: relative;
-    color: #F5F5F5;
+    color: #333333;
 }
+
 .sobremim h1 {
-    position: relative;
-    left: 10rem;
-    padding: 7rem 0;
+    padding: 5rem 0;
     font-size: 7rem;
     font-family: var(--font);
-    margin-right: 80rem;
-    Letter-spacing: 0.5rem;
+    letter-spacing: 0.5rem;
 }
+
 .sobremim h2 {
-    position: relative;
-    left: 10rem;
     font-size: 3rem;
     font-family: var(--fonte);
-    margin-right: 85rem;
     font-weight: 400;
+    margin-bottom: 1rem;
+    margin-right: 70rem;
+}
+article {
+    height: 100rem;
 }
 article .img {
     position: relative;
+    bottom: 35rem;
+    left: 130rem;
+    margin-right: 130rem;
 }
 article .img img {
-    position: relative;
-    left: 120rem;
-    bottom: 35rem;
     width: 45rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
+
 .infos {
     position: relative;
     bottom: 90rem;
-    margin-left: 100rem;
+    left: 160rem;
+    margin-right: 160rem;
 }
+
 .infos h3 {
     font-family: var(--fonte);
     font-size: 2.5rem;
@@ -165,31 +190,39 @@ article .img img {
     text-align: center;
     border-radius: 30px;
 }
+
 .contato {
-    position: relative;
     display: flex;
+    position: relative;
+    bottom: 65rem;
+    flex-wrap: wrap;
     gap: 5rem;
-    bottom: 69rem;
-    margin-left: 9rem;
-    margin-right: 80rem;
-    padding: 2rem 2rem;
     background-color: #FCC419;
     border-radius: 30px;
+    padding: 2rem;
+    margin-right: 96rem;
 }
+
 .contato h3 {
     font-family: var(--fonte);
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-.contato h3 img {
-    position: relative;
-    top: 1rem;  
-}
+
 .mainIII {
+    text-align: center;
+    margin-top: 5rem;
     position: relative;
-    margin-left: 100rem;
+    bottom: 70rem;
+    left: 130rem;
+    margin-right: 153rem;
 }
+
 .mainIII h2 {
-    font-size: 5rem;
+    font-size: 8.7rem;
     font-family: var(--font);
+    color: #333333;
+    margin-bottom: 1rem;
 }
